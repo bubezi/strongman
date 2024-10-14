@@ -1,7 +1,7 @@
 /* main page styling */
 body {
 	margin: 0;
-	padding: 0;
+	padding-bottom: 100px;
 	overflow: auto;
 }
 
@@ -101,16 +101,29 @@ h: auto;
 }
 
 #second-div {
+	overflow: visible;
 	background-color: #c6cc5c;
-	margin: 0;
+	margin-bottom: 0;
 	padding-top: 20px;
 	overflow: auto;
 }
 
-#second-div p {
+#second-div p:nth-child(1) {
 	margin-left: 70px;
 	font-size: 20px;
 	font-weight: bold;
+}
+
+#second-div p:nth-of-type(2) {
+	text-align: center;
+	margin: 10px 70px;
+	font-size: 20px;
+	font-weight: bold;
+}
+#second-div p:nth-of-type(3) {
+	text-align: center;
+	line-height: 2.0;
+	margin: 0 90px;
 }
 
 #second-div img {
@@ -119,3 +132,105 @@ h: auto;
 	margin-right: auto;
 }
 
+/* user profile container */
+.testimonies {
+	display: flex;
+	justify-content: space-between;
+}
+
+.testimony {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+
+.user-pic {
+	margin-right: 10px;
+	width: 50px;
+	height: 50px;
+	object-fit: cover;
+	border-radius: 40px;
+}
+
+.user-info {
+	display: flex;
+	flex-direction: column;
+}
+
+
+#third-div {
+	background-color: #28291c;
+	text-align: center;
+	margin: 0 70px;
+}
+
+#fourth-div .left {
+	float: left;
+	margin-left: 70px;
+}
+#fourth-div .right {
+	float: right;
+}
+#fourth-div::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+#fifth-div {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 0;
+}
+
+#fifth-div .fifth-columns {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column5 {
+	flex: 1;
+	margin: 0 10px;
+}
+.column5 img {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#sixth-div {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+}
+
+#sixth-div img {
+	width: 500px;
+	height: auto;
+}
+
+#seventh-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#seventh-div img {
+    width: 400px; /* Adjust size as needed */
+    height: auto;
+    margin-right: 40px;
+}
+
+#seventh-div .content {
+    flex: 1;
+    margin-left: 20px; /* Adjust spacing as needed */
+}
+
+#seventh-div .content .list7 {
+	list-style-type: none;
+}
+#seventh-div .content .list7 li::before {
+	content: "👉 ";
+	margin-right: 5px;
+}
