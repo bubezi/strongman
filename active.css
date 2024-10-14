@@ -1,0 +1,121 @@
+/* main page styling */
+body {
+	margin: 0;
+	padding: 0;
+	overflow: auto;
+}
+
+/* static container */
+.static-div {
+	position: fixed;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	text-align: center;
+	background-color: #f8f9fa;
+	width: 100%;
+	padding: 20px;
+	color: green;
+	font-weight: bold;
+}
+
+.click-here {
+	margin-top: 10px;
+}
+
+.click-here button {
+	background-color: green;
+	color: white;
+	font-size: 16px;
+	padding: 10px 20px;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+#first-div {
+	background-color: black;
+	color: white;
+	padding: 20px 0;
+	width: 100%;
+	text-align: center;
+	box-sizing: border-box;
+}
+
+#first-div h1, #first-div h4 {
+	margin: 0;
+	font-weight: bold;
+}
+
+#first-div h4 {
+	color: #e9f502;
+}
+
+#first-div .slideshow-container {
+	margin: 20px;
+}
+
+/* slideshow container */
+.slideshow-container {
+	position: relative;
+	max-width: 100%;
+	min-height: 300px;
+	margin: auto;
+h: auto;
+	transition: opacity 2s;
+}
+
+/* navigation buttons */
+.prev, .next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	padding: 16px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	user-select: none;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.prev {
+	left: 0;
+}
+.next {
+	right: 0;
+}
+
+.prev:hover, .next:hover {
+	background-color: rgba(0, 0, 0, 0.8);
+}
+/* Add animation */
+.fade {
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+
+@keyframes fade {
+	 from { opacity: .4; }
+    to { opacity: 1; }
+}
+
+#second-div {
+	background-color: #c6cc5c;
+	margin: 0;
+	padding-top: 20px;
+	overflow: auto;
+}
+
+#second-div p {
+	margin-left: 70px;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+#second-div img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
