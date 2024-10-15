@@ -235,8 +235,138 @@ h: auto;
 	margin-right: 5px;
 }
 
+#eighth-div {
+	text-align: center;
+}
+
+#ninth-div {
+	text-align: center;
+}
+
+#four-column-stars {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+#four-column-stars .column {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
+}
+
+#four-column-stars img {
+    width: 50px; /* Star image size */
+    margin-bottom: 10px;
+}
+
+#four-column-stars h3 {
+    font-size: 18px;
+    color: #a71d2a; /* Consistent with the red star theme */
+    margin-bottom: 10px;
+}
+
+#four-column-stars p {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    #four-column-stars {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #four-column-stars .column {
+        margin-bottom: 20px;
+        max-width: 90%;
+    }
+}
+
+#eleventh-div {
+    text-align: center;
+    padding: 20px;
+}
+
+#package-columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 30px;
+    padding: 0 20px;
+}
+
+.package {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    text-align: center;
+}
+
+.package h2 {
+    font-size: 24px;
+    color: #2a5634; /* Dark green for the headings */
+}
+
+.package p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.package img {
+    width: 100%; /* Adjust the size according to your preference */
+    margin: 10px 0;
+}
+
+.package .price {
+    font-size: 20px;
+    color: red;
+    margin: 10px 0;
+}
+
+.package-btn {
+    background-color: #2a5634;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.package-btn:hover {
+    background-color: #1e4526;
+}
+
+@media (max-width: 768px) {
+    #package-columns {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .package {
+        margin-bottom: 20px;
+        max-width: 90%;
+    }
+}
+
 #faq-questions .faq-ans {
 	display: none;
+}
+.faq-question {
+	cursor: pointer;
+	margin-left: 20px;
+}
+.faq-ans {
+	margin-left: 25px;
 }
 #faq-questions h1 {
 	text-align: center;
