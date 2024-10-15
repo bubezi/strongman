@@ -157,11 +157,16 @@ h: auto;
 	flex-direction: column;
 }
 
-
 #third-div {
-	background-color: #28291c;
-	text-align: center;
-	margin: 0 70px;
+    background-color: #3d2c07;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-family: Arial, sans-serif;
 }
 
 #fourth-div .left {
