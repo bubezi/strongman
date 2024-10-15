@@ -240,7 +240,33 @@ h: auto;
 }
 
 #ninth-div {
-	text-align: center;
+    margin: 20px;
+}
+
+.ninth-content {
+    display: flex;
+    align-items: flex-start;
+}
+
+.ninth-image {
+    max-width: 150px;
+    margin-right: 20px;
+    border: none;
+}
+
+.ninth-text {
+    flex: 1;
+}
+
+.ninth-ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#ninth-div,
+.ninth-content {
+    border: none;
 }
 
 #four-column-stars {
