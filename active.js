@@ -27,3 +27,15 @@ function changeSlide(n) {
 setInterval(function() {
     changeSlide(1);
 }, 5000);
+
+document.querySelectorAll('.faq-question').forEach(question => {
+	question.addEventListener('click', () => {
+		const answer = question.nextElementSibling;
+
+		if (answer.style.display == 'block') {
+			answer.style.display = "none";
+		} else {
+			answer.style.display = "block";
+		}
+	});
+});

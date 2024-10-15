@@ -234,3 +234,50 @@ h: auto;
 	content: "👉 ";
 	margin-right: 5px;
 }
+
+#faq-questions .faq-ans {
+	display: none;
+}
+#faq-questions h1 {
+	text-align: center;
+}
+
+#third-last-div {
+	text-align: center;
+}
+
+#third-last-div h1 {
+	color: #947022;
+}
+
+#third-last-div p {
+	margin-top: 0;
+	font-size: 16px;
+	text-decoration: underline;
+	color: red;
+}
+
+#second-last-div {
+	text-align: center;
+}
+
+#second-last-div h2 {
+	font-size: 40px;
+}
+
+#second-last-div h1 {
+	color: red;
+}
+
+#last-div {
+	background-color: #57615a;
+	text-align: center;
+	color: white;
+}
+#last-div p {
+	margin: 0 20px;
+}
+
+#last-div h3 {
+	color: #de9a09;
+}
