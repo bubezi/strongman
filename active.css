@@ -269,6 +269,14 @@ h: auto;
     border: none;
 }
 
+#tenth-div .consistency {
+	text-align: center;
+}
+
+#tenth-div h2 {
+	text-align: center;
+}
+
 #four-column-stars {
     display: flex;
     justify-content: space-between;
