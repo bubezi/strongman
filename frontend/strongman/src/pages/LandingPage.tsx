@@ -2,6 +2,7 @@ import React from "react";
 import { Container } from "react-bootstrap";
 import introPicture from "../assets/images/intro.jpeg";
 import { useNavigate } from "react-router-dom";
+import "../assets/css/landing.css";
 
 const LandingPage: React.FC = () => {
   const navigate = useNavigate();
@@ -31,7 +32,7 @@ const LandingPage: React.FC = () => {
           </div>
         </Container>
         <div className="black-background-across-the-page">
-          <h3>DISCLAIMER</h3>
+          <h3 id="disclaimer">DISCLAIMER</h3>
           <p>
             THIS IS NOT FACEBOOK: This site is not part of the Facebook or
             Facebook Inc. website. In addition, this site is NOT endorsed by
