@@ -496,6 +496,7 @@ const MainPage: React.FC = () => {
           Facebook Inc. website. In addition, this site is NOT endorsed by
           Facebook in any way. FACEBOOK is a trademark of FACEBOOK, Inc.
         </p>
+      </div>
 
         <div className="static-div">
           ACTIVE VITALITY TEA
@@ -503,7 +504,6 @@ const MainPage: React.FC = () => {
             <button> I WANT IT; CLICK HERE</button>
           </div>
         </div>
-      </div>
     </>
   );
 };
