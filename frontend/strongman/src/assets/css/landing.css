@@ -1,85 +1,156 @@
+/* General Responsive Styling */
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
 .landing-page {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    min-height: 100vh; 
-    background-color: #055619;
-    color: white;
-    padding: 20px;
-    padding-bottom: 0;
-  }
-  
-  .content {
-    text-align: center;
-    margin: auto;
-    max-width: 150vh;
-  }
-  
-  #main-title {
-    font-size: 50px;
-  }
-  
-  #main-intro {
-    color: black;
-    padding-top: 40px;
-  }
-  
-  .dotted-box {
-    border: 3px dashed #000; 
-    padding: 20px; 
-    margin: 20px; 
-    display: inline-block; 
-  }
-  
-  .black-background-across-the-page {
-    background-color: black; 
-    color: white; 
-    padding: 20px; 
-    width: 100%; 
-    margin-top: 20px; 
-    text-align: center; 
-  }
-  
-  
-  #disclaimer {
-    color: red
-  }
-  
-  
-  .footer {
-    position: fixed; 
-    bottom: 0;
-    left: 0;
-    background-color: #032F03;
-    height: 21vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 10;
-  }
-  
-  /* Add space at the bottom of content to prevent footer overlap */
-  .landing-page::after {
-    content: '';
-    display: block;
-    height: 21vh; /* Reserve space for the footer height */
-  }
-  
-  .cta-button {
-    position: relative; 
-    bottom: 0;
-    background-color: red;
-    color: white;
-    border: none;
-    padding: 15px 30px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
-  }
-  
-  .cta-button:hover {
-    background-color: darkred;
-  }
-  
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	min-height: 100vh; 
+	background-color: #055619;
+	color: white;
+	padding: 20px;
+	padding-bottom: 0;
+}
+
+.content {
+	text-align: center;
+	margin: auto;
+	max-width: 150vh;
+}
+
+#main-title {
+	font-size: 50px;
+}
+
+#main-intro {
+	color: black;
+	padding-top: 40px;
+}
+
+.dotted-box {
+	border: 3px dashed #000; 
+	padding: 20px; 
+	margin: 20px; 
+	display: inline-block; 
+}
+
+.black-background-across-the-page {
+	background-color: black; 
+	color: white; 
+	padding: 20px; 
+	width: 100%; 
+	margin-top: 20px; 
+	text-align: center; 
+}
+
+#disclaimer {
+	color: red;
+}
+
+.footer {
+	position: fixed; 
+	bottom: 0;
+	left: 0;
+	background-color: #032F03;
+	height: 21vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 10;
+}
+
+/* Add space at the bottom of content to prevent footer overlap */
+.landing-page::after {
+	content: '';
+	display: block;
+	height: 21vh; /* Reserve space for the footer height */
+}
+
+.cta-button {
+	position: relative; 
+	bottom: 0;
+	background-color: red;
+	color: white;
+	border: none;
+	padding: 15px 30px;
+	font-size: 16px;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+.cta-button:hover {
+	background-color: darkred;
+}
+
+/* Mobile Devices (phones) */
+@media only screen and (max-width: 600px) {
+	#main-title {
+		font-size: 28px;
+	}
+
+	.content {
+		max-width: 90vh; /* Adjust width for small screens */
+	}
+
+	.dotted-box {
+		padding: 10px;
+		margin: 10px;
+	}
+
+	.cta-button {
+		padding: 10px 20px;
+		font-size: 14px;
+	}
+}
+
+/* Tablets */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+	#main-title {
+		font-size: 40px;
+	}
+
+	.content {
+		max-width: 120vh; /* Adjust width for medium screens */
+	}
+
+	.dotted-box {
+		padding: 15px;
+		margin: 15px;
+	}
+
+	.cta-button {
+		padding: 12px 25px;
+		font-size: 15px;
+	}
+}
+
+/* Laptops and Desktops */
+@media only screen and (min-width: 1025px) {
+	#main-title {
+		font-size: 50px;
+	}
+
+	.content {
+		max-width: 150vh; /* Keep the original width for larger screens */
+	}
+
+	.dotted-box {
+		padding: 20px;
+		margin: 20px;
+	}
+
+	.cta-button {
+		padding: 15px 30px;
+		font-size: 16px;
+	}
+}
+

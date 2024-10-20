@@ -1,165 +1,165 @@
 /* main page styling */
 body {
-	margin: 0;
-	padding-bottom: 100px;
-	overflow: auto;
+        margin: 0;
+        padding-bottom: 100px;
+        overflow: auto;
 }
 
 /* static container */
 .static-div {
-	position: fixed;
-	bottom: 0;
-	left: 50%;
-	transform: translateX(-50%);
-	text-align: center;
-	background-color: #f8f9fa;
-	width: 100%;
-	padding: 20px;
-	color: green;
-	font-weight: bold;
+        position: fixed;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        background-color: #f8f9fa;
+        width: 100%;
+        padding: 20px;
+        color: green;
+        font-weight: bold;
 }
 
 .click-here {
-	margin-top: 10px;
+        margin-top: 10px;
 }
 
 .click-here button {
-	background-color: green;
-	color: white;
-	font-size: 16px;
-	padding: 10px 20px;
-	cursor: pointer;
-	border-radius: 5px;
+        background-color: green;
+        color: white;
+        font-size: 16px;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 5px;
 }
 
 #first-div {
-	background-color: black;
-	color: white;
-	padding: 20px 0;
-	width: 100%;
-	text-align: center;
-	box-sizing: border-box;
+        background-color: black;
+        color: white;
+        padding: 20px 0;
+        width: 100%;
+        text-align: center;
+        box-sizing: border-box;
 }
 
 #first-div h1, #first-div h4 {
-	margin: 0;
-	font-weight: bold;
+        margin: 0;
+        font-weight: bold;
 }
 
 #first-div h4 {
-	color: #e9f502;
+        color: #e9f502;
 }
 
 #first-div .slideshow-container {
-	margin: 20px;
+        margin: 20px;
 }
 
 /* slideshow container */
 .slideshow-container {
-	position: relative;
-	max-width: 100%;
-	min-height: 300px;
-	margin: auto;
+        position: relative;
+        max-width: 100%;
+        min-height: 300px;
+        margin: auto;
     height: 65vh;
-	transition: opacity 2s;
+        transition: opacity 2s;
 }
 
 #slide-image {
-	height: 60vh;
-	width: auto;
+        height: 60vh;
+        width: auto;
 }
 
 /* navigation buttons */
 .prev, .next {
-	cursor: pointer;
-	position: absolute;
-	top: 50%;
-	width: auto;
-	padding: 16px;
-	color: white;
-	font-weight: bold;
-	font-size: 18px;
-	transition: 0.6s ease;
-	user-select: none;
-	background-color: rgba(0, 0, 0, 0.5);
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        user-select: none;
+        background-color: rgba(0, 0, 0, 0.5);
 }
 
 .prev {
-	left: 0;
+        left: 0;
 }
 .next {
-	right: 0;
+        right: 0;
 }
 
 .prev:hover, .next:hover {
-	background-color: rgba(0, 0, 0, 0.8);
+        background-color: rgba(0, 0, 0, 0.8);
 }
 /* Add animation */
 .fade {
-	animation-name: fade;
-	animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
 }
 
 @keyframes fade {
-	 from { opacity: .4; }
+         from { opacity: .4; }
     to { opacity: 1; }
 }
 
 #second-div {
-	overflow: visible;
-	background-color: #c6cc5c;
-	margin-bottom: 0;
-	padding-top: 20px;
-	overflow: auto;
+        overflow: visible;
+        background-color: #c6cc5c;
+        margin-bottom: 0;
+        padding-top: 20px;
+        overflow: auto;
 }
 
 #second-div p:nth-child(1) {
-	margin-left: 70px;
-	font-size: 20px;
-	font-weight: bold;
+        margin-left: 70px;
+        font-size: 20px;
+        font-weight: bold;
 }
 
 #second-div p:nth-of-type(2) {
-	text-align: center;
-	margin: 10px 70px;
-	font-size: 20px;
-	font-weight: bold;
+        text-align: center;
+        margin: 10px 70px;
+        font-size: 20px;
+        font-weight: bold;
 }
 #second-div p:nth-of-type(3) {
-	text-align: center;
-	line-height: 2.0;
-	margin: 0 90px;
+        text-align: center;
+        line-height: 2.0;
+        margin: 0 90px;
 }
 
 #second-div img {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
 }
 
 /* user profile container */
 .testimonies {
-	display: flex;
-	justify-content: space-between;
+        display: flex;
+        justify-content: space-between;
 }
 
 .testimony {
-	display: flex;
-	align-items: center;
-	gap: 20px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
 }
 
 .user-pic {
-	margin-right: 10px;
-	width: 50px;
-	height: 50px;
-	object-fit: cover;
-	border-radius: 40px;
+        margin-right: 10px;
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        border-radius: 40px;
 }
 
 .user-info {
-	display: flex;
-	flex-direction: column;
+        display: flex;
+        flex-direction: column;
 }
 
 #third-div {
@@ -175,49 +175,49 @@ body {
 }
 
 #fourth-div .left {
-	float: left;
-	margin-left: 70px;
+        float: left;
+        margin-left: 70px;
 }
 #fourth-div .right {
-	float: right;
+        float: right;
 }
 #fourth-div::after {
-	content: "";
-	clear: both;
-	display: table;
+        content: "";
+        clear: both;
+        display: table;
 }
 
 #fifth-div {
-	display: flex;
-	flex-direction: column;
-	margin-bottom: 0;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0;
 }
 
 #fifth-div .fifth-columns {
-	display: flex;
-	justify-content: space-between;
+        display: flex;
+        justify-content: space-between;
 }
 
 .column5 {
-	flex: 1;
-	margin: 0 10px;
+        flex: 1;
+        margin: 0 10px;
 }
 .column5 img {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 }
 
 #sixth-div {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
 }
 
 #sixth-div img {
-	width: 500px;
-	height: auto;
+        width: 500px;
+        height: auto;
 }
 
 #seventh-div {
@@ -238,15 +238,15 @@ body {
 }
 
 #seventh-div .content .list7 {
-	list-style-type: none;
+        list-style-type: none;
 }
 #seventh-div .content .list7 li::before {
-	content: "👉 ";
-	margin-right: 5px;
+        content: "👉 ";
+        margin-right: 5px;
 }
 
 #eighth-div {
-	text-align: center;
+        text-align: center;
 }
 
 #ninth-div {
@@ -280,11 +280,11 @@ body {
 }
 
 #tenth-div .consistency {
-	text-align: center;
+        text-align: center;
 }
 
 #tenth-div h2 {
-	text-align: center;
+        text-align: center;
 }
 
 #four-column-stars {
@@ -455,55 +455,129 @@ body {
 }
 
 #faq-questions .faq-ans {
-	display: none;
+        display: none;
 }
 .faq-question {
-	cursor: pointer;
-	margin-left: 20px;
+        cursor: pointer;
+        margin-left: 20px;
 }
 .faq-ans {
-	margin-left: 25px;
+        margin-left: 25px;
 }
 #faq-questions h1 {
-	text-align: center;
+        text-align: center;
 }
 
 #third-last-div {
-	text-align: center;
+        text-align: center;
 }
 
 #third-last-div h1 {
-	color: #947022;
+        color: #947022;
 }
 
 #third-last-div p {
-	margin-top: 0;
-	font-size: 16px;
-	text-decoration: underline;
-	color: red;
+        margin-top: 0;
+        font-size: 16px;
+        text-decoration: underline;
+        color: red;
 }
 
 #second-last-div {
-	text-align: center;
+        text-align: center;
 }
 
 #second-last-div h2 {
-	font-size: 40px;
+        font-size: 40px;
 }
 
 #second-last-div h1 {
-	color: red;
+        color: red;
 }
 
 #last-div {
-	background-color: #57615a;
-	text-align: center;
-	color: white;
+        background-color: #57615a;
+        text-align: center;
+        color: white;
 }
 #last-div p {
-	margin: 0 20px;
+        margin: 0 20px;
 }
 
 #last-div h3 {
-	color: #de9a09;
+        color: #de9a09;
+}
+
+/* Media query for screens with a max width of 768px (tablets and smaller devices) */
+@media (max-width: 768px) {
+
+    /* Adjustments for the four-column stars section */
+    #four-column-stars {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #four-column-stars .column {
+        margin-bottom: 20px;
+        max-width: 90%;
+    }
+
+    /* Adjustments for the package columns section */
+    #package-columns {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .package {
+        margin-bottom: 20px;
+        max-width: 90%;
+    }
+
+    /* Slideshow adjustments */
+    .slideshow-container {
+        min-height: 200px;
+    }
+
+    #slide-image {
+        height: 40vh;
+    }
+
+    /* Adjustments for user testimonies */
+    .testimonies {
+        flex-direction: column;
+    }
+
+    .testimony {
+        margin-bottom: 20px;
+    }
+
+    /* General text adjustments */
+    #first-div h1, #first-div h4, #second-div p {
+        font-size: 18px;
+    }
+
+    #second-div p:nth-child(1), #second-div p:nth-of-type(2), #second-div p:nth-of-type(3) {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    /* Adjustments for the images */
+    #sixth-div img, #seventh-div img, #guarantee-div img {
+        width: 100%;
+    }
+
+    /* Adjustments for the ninth-content section */
+    .ninth-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ninth-image {
+        max-width: 100px;
+        margin-bottom: 20px;
+    }
+
+    .ninth-text {
+        text-align: center;
+    }
 }
