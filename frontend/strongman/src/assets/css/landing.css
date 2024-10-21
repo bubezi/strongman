@@ -89,7 +89,6 @@ img {
 	font-size: 14px;
 	cursor: pointer;
 	border-radius: 5px;
-	width: 90%; 
 }
 
 .cta-button:hover {
@@ -101,17 +100,17 @@ img {
 	#main-title {
 		font-size: 24px;
 	}
-
+	
 	.content {
 		max-width: 95vw; 
 	}
-
+	
 	.dotted-box {
 		padding: 8px;
 		margin: 8px;
 		font-size: 12px;
 	}
-
+	
 	.cta-button {
 		padding: 10px 15px;
 		font-size: 12px;

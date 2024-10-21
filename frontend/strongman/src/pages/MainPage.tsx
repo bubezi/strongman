@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "../assets/css/active.css";
-import slideImage1 from "../assets/images/image1.jpeg";
-import slideImage2 from "../assets/images/image2.jpeg";
-import slideImage3 from "../assets/images/image3.jpeg";
+import slideImage1 from "../assets/images/qqq.jpg";
+// import slideImage2 from "../assets/images/image2.jpeg";
+// import slideImage3 from "../assets/images/image3.jpeg";
 import image4 from "../assets/images/image4.jpeg";
 import image5 from "../assets/images/image5.png";
 import image7 from "../assets/images/image7.jpeg";
@@ -19,8 +19,12 @@ import deeper from "../assets/images/deeper.png";
 import coffee from "../assets/images/coffee.png";
 import guarantee from "../assets/images/guarantee.png";
 import star from "../assets/images/star.png";
+import newImage from "../assets/images/new.jpg";
 
-const images = [slideImage1, slideImage2, slideImage3];
+const images = [
+  slideImage1,
+  // slideImage2, slideImage3
+];
 
 const MainPage: React.FC = () => {
   const [slideIndex, setSlideIndex] = useState(1);
@@ -123,47 +127,28 @@ const MainPage: React.FC = () => {
           or your little man sleep off during or before the match begins, this
           product is the perfect solution.
         </p>
-
         <div className="testimonies">
           <div className="testimony">
             <img src={profileImage1} alt="Profile1" className="user-pic" />
             <div className="user-info">
-              <h3>user name 1</h3>
+              <h3>Username 1</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
                 nobis explicabo eum, eveniet a recusandae? Odit eveniet
                 distinctio vitae ipsa numquam ratione nobis itaque modi
-                doloribus sapiente natus, odio praesentium, laboriosam in,
-                recusandae possimus est eligendi nulla minus doloremque et
-                rerum! Corrupti consectetur debitis numquam, inventore culpa
-                vitae accusantium voluptates omnis, placeat, ratione eius nihil?
-                Perspiciatis unde magni inventore ratione fuga vel nam nesciunt,
-                adipisci libero debitis exercitationem aliquam pariatur quas,
-                eligendi laudantium? Libero nulla, consequuntur, autem dolore
-                itaque facere aliquam suscipit, maxime rerum illum reprehenderit
-                ipsum possimus harum corrupti. Minus ad, architecto totam fugit
-                temporibus nihil nisi suscipit doloribus?
+                doloribus sapiente natus, odio praesentium...
               </p>
             </div>
           </div>
           <div className="testimony">
             <img src={profileImage2} alt="Profile2" className="user-pic" />
             <div className="user-info">
-              <h3>username 2</h3>
+              <h3>Username 2</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Molestias id atque alias dolore quae dolores rem adipisci,
                 ratione, eum enim, itaque ipsum delectus reprehenderit? Alias
-                repellat dignissimos obcaecati fuga, repudiandae distinctio,
-                explicabo deserunt, id quam unde natus! Hic, tempore ipsa dolor
-                blanditiis maiores fuga neque odit expedita aliquid sint,
-                exercitationem temporibus, veniam cupiditate quaerat. Eius
-                maiores dolor sint, voluptates nisi, in minus illum, veniam
-                corporis nostrum unde dolore autem laudantium quas eveniet
-                temporibus saepe! Repudiandae nostrum nemo odit aspernatur
-                dignissimos id, nam sit ipsa nihil fugiat? Qui blanditiis
-                doloremque, laudantium quibusdam quae itaque eaque molestias,
-                commodi molestiae dolor ipsum.
+                repellat dignissimos obcaecati fuga...
               </p>
             </div>
           </div>
@@ -200,7 +185,7 @@ const MainPage: React.FC = () => {
       </div>
 
       <div id="fourth-div">
-        <img src={image4} alt="Image4" className="left" />
+        <img src={newImage} alt="Image4" className="left" />
         <img src={testimony4} alt="testimony4" className="right" />
       </div>
 
@@ -313,7 +298,11 @@ const MainPage: React.FC = () => {
           keep getting better and better with consistent use.
         </p>
         <h2>HERE IS WHY THIS COFFEE IS THE BEST SOLUTION...</h2>
-        <img src={coffee} alt="Coffe cup" style={{ alignItems:"center", textAlign:"center"}}/>
+        <img
+          src={coffee}
+          alt="Coffe cup"
+          style={{ alignItems: "center", textAlign: "center" }}
+        />
         <div id="four-column-stars">
           <div className="column">
             <img src={star} alt="star" />
@@ -366,7 +355,7 @@ const MainPage: React.FC = () => {
           <div className="package">
             <h2>Basic Package</h2>
             <p>(20 Tea Bags Included)</p>
-            <p>1 Pack of the ACTIVE VITALITY Tea Bag</p>
+            <p>1 Pack of the ACTIVE STRONGMAN Tea Bag</p>
             <img src={bag1} alt="Basic Package" />
             <p className="price">3500 KES ONLY</p>
             <button className="package-btn">👍 I want This Package</button>
@@ -374,7 +363,7 @@ const MainPage: React.FC = () => {
           <div className="package">
             <h2>Premium Package</h2>
             <p>(40 Tea Bags Altogether)</p>
-            <p>2 Packs of the ACTIVE VITALITY Tea Bags</p>
+            <p>2 Packs of the ACTIVE STRONGMAN Tea Bags</p>
             <img src={bag2} alt="Premium Package" />
             <p className="price">6000 KES ONLY</p>
             <button className="package-btn">👍 I want This Package</button>
@@ -382,7 +371,7 @@ const MainPage: React.FC = () => {
           <div className="package">
             <h2>Advanced Package</h2>
             <p>(60 Tea Bags Cumulatively)</p>
-            <p>3 Packs of the ACTIVE VITALITY Tea Bags</p>
+            <p>3 Packs of the ACTIVE STRONGMAN Tea Bags</p>
             <img src={bag3} alt="Advanced Package" />
             <p className="price">8000 KES ONLY</p>
             <button className="package-btn">👍 I want This Package</button>
@@ -455,7 +444,11 @@ const MainPage: React.FC = () => {
           TAKE YOUR PERFORMANCE IN THE GYM & BEDROOM TO THE NEXT LEVEL WITH THE
           SUPERCHARGE MALE COFFEE!
         </h1>
-        <img src={belt} alt="belt img" style={{ height: "auto", width: "450px"}}/>
+        <img
+          src={belt}
+          alt="belt img"
+          style={{ height: "auto", width: "450px" }}
+        />
         <p>Order today and Enjoy FREE DELIVERY</p>
       </div>
 
@@ -499,12 +492,12 @@ const MainPage: React.FC = () => {
         </p>
       </div>
 
-        <div className="static-div">
-          ACTIVE VITALITY TEA
-          <div className="click-here">
-            <button> I WANT IT; CLICK HERE</button>
-          </div>
+      <div className="static-div">
+        ACTIVE STRONGMAN TEA
+        <div className="click-here">
+          <button> I WANT IT; CLICK HERE</button>
         </div>
+      </div>
     </>
   );
 };
