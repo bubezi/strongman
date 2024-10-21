@@ -18,6 +18,7 @@ import blood from "../assets/images/blood.png";
 import deeper from "../assets/images/deeper.png";
 import coffee from "../assets/images/coffee.png";
 import guarantee from "../assets/images/guarantee.png";
+import star from "../assets/images/star.png";
 
 const images = [slideImage1, slideImage2, slideImage3];
 
@@ -312,10 +313,10 @@ const MainPage: React.FC = () => {
           keep getting better and better with consistent use.
         </p>
         <h2>HERE IS WHY THIS COFFEE IS THE BEST SOLUTION...</h2>
-        <img src={coffee} alt="Coffe cup" />
+        <img src={coffee} alt="Coffe cup" style={{ alignItems:"center", textAlign:"center"}}/>
         <div id="four-column-stars">
           <div className="column">
-            <img src="path-to-star-icon.png" alt="star" />
+            <img src={star} alt="star" />
             <h3>Made From Natural Ingredients</h3>
             <p>
               Unlike other similar product that are made with harmful chemicals,
@@ -325,7 +326,7 @@ const MainPage: React.FC = () => {
             </p>
           </div>
           <div className="column">
-            <img src="path-to-star-icon.png" alt="star" />
+            <img src={star} alt="star" />
             <h3>Long-Lasting Result</h3>
             <p>
               This product offers permanent solution and not temporary. Other
@@ -335,7 +336,7 @@ const MainPage: React.FC = () => {
             </p>
           </div>
           <div className="column">
-            <img src="path-to-star-icon.png" alt="star" />
+            <img src={star} alt="star" />
             <h3>Fast Results Within 7 Days</h3>
             <p>
               You will not have to wait for 30days to see result. You will start
@@ -344,7 +345,7 @@ const MainPage: React.FC = () => {
             </p>
           </div>
           <div className="column">
-            <img src="path-to-star-icon.png" alt="star" />
+            <img src={star} alt="star" />
             <h3>Works for All Conditions Dysfunction Wahala</h3>
             <p>
               This Herbal Cure revives the sleeping little man under no matter
