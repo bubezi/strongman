@@ -1,9 +1,8 @@
-/* main page styling */
 body {
   margin: 0;
   padding-bottom: 100px;
   overflow: auto;
-  font-family: "Roboto", sans-serif; /* Add a modern, clean font */
+  font-family: "Roboto", sans-serif; 
   line-height: 1.6;
 }
 
@@ -13,15 +12,14 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 700; /* Stronger heading emphasis */
+  font-weight: 700; 
   line-height: 1.2;
 }
 
 p {
-  font-size: 16px; /* Slightly larger for readability */
+  font-size: 16px; 
 }
 
-/* Section Spacing */
 #second-div,
 #third-div,
 #fourth-div {
@@ -35,12 +33,10 @@ p {
   padding: 50px 20px;
 }
 
-/* Consistent button margin */
 button {
   margin-top: 15px;
 }
 
-/* static container */
 .static-div {
   position: fixed;
   bottom: 0;
@@ -90,7 +86,6 @@ button {
   margin: 20px;
 }
 
-/* slideshow container */
 .slideshow-container {
   position: relative;
   max-width: 100%;
@@ -105,7 +100,6 @@ button {
   width: auto;
 }
 
-/* navigation buttons */
 .prev,
 .next {
   cursor: pointer;
@@ -179,7 +173,6 @@ button {
   margin-right: auto;
 }
 
-/* user profile container */
 .testimonies {
     display: flex;
     justify-content: space-evenly; 
@@ -187,35 +180,35 @@ button {
 }
 
 .testimony {
-    background-color: #f9f9f9; /* Light background for the card */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    padding: 20px; /* Padding inside the card */
-    width: calc(50% - 10px); /* Three cards per row with gap */
-    max-width: 350px; /* Max width for each card */
+    background-color: #f9f9f9; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    padding: 20px; 
+    width: calc(50% - 10px); 
+    max-width: 350px; 
     display: flex;
     align-items: center;
 }
 
 .user-pic {
-    border-radius: 50%; /* Circular user image */
-    width: 60px; /* Fixed width for user image */
-    height: 60px; /* Fixed height for user image */
-    object-fit: cover; /* Ensures image covers the area without distortion */
+    border-radius: 50%; 
+    width: 60px; 
+    height: 60px; 
+    object-fit: cover; 
 }
 
 .user-info {
-    margin-left: 15px; /* Space between image and text */
+    margin-left: 15px; 
 }
 
 .user-info h3 {
-    margin: 0; /* Removes default margin */
-    font-size: 1.2rem; /* Font size for user name */
+    margin: 0; 
+    font-size: 1.2rem; 
 }
 
 .user-info p {
-    font-size: 0.9rem; /* Font size for testimony text */
-    color: #555; /* Darker gray for text */
+    font-size: 0.9rem; 
+    color: #555; 
 }
 
 .user-pic {
@@ -343,6 +336,7 @@ button {
 .ninth-text {
   flex: 1;
   padding: 0px 0px 100px;
+  max-width: 60vh;
 }
 
 .ninth-ul {
@@ -354,6 +348,38 @@ button {
 #ninth-div,
 .ninth-content {
   border: none;
+}
+
+#tenth-div {
+  padding: 0px 150px;
+}
+
+#tenth-div .whatsApp {
+  height: 50vh;
+  width: auto;
+  padding-left: 100px;
+}
+
+#tenth-div .first-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+}
+
+#tenth-div .first-row .text{
+  padding: 70px 100px;
+  width: 50vh;
+}
+
+.coffee-div {
+  text-align: center;
+  padding: 10px 150px;
+}
+
+.coffee-cup {
+  text-align: center;
+  align-items: center;
 }
 
 #tenth-div .consistency {
@@ -369,7 +395,7 @@ button {
   justify-content: space-between;
   margin-top: 40px;
   gap: 20px;
-  padding: 0 20px;
+  padding: 0 150px;
 }
 
 #four-column-stars .column {
@@ -424,7 +450,7 @@ button {
   color: #fff;
   padding: 30px 20px;
   font-size: 14px;
-}
+}       
 
 #last-div h3 {
   color: #f4b41a; /* Gold accent */
@@ -468,7 +494,8 @@ button {
 
 #eleventh-div {
   text-align: center;
-  padding: 20px;
+  padding: 20px 150px;
+
 }
 
 #package-columns {
@@ -587,6 +614,10 @@ button {
   color: #d32f2f;
 }
 
+#faq-questions {
+  padding: 10px 150px;
+}
+
 #faq-questions .faq-ans {
   display: none;
 }
@@ -603,6 +634,7 @@ button {
 
 #third-last-div {
   text-align: center;
+  padding: 20px 150px;
 }
 
 #third-last-div h1 {
@@ -618,6 +650,7 @@ button {
 
 #second-last-div {
   text-align: center;
+  padding: 10px 150px;
 }
 
 #second-last-div h2 {
@@ -632,6 +665,7 @@ button {
   background-color: #57615a;
   text-align: center;
   color: white;
+  padding: 20px 150px 40px;
 }
 #last-div p {
   margin: 0 20px;

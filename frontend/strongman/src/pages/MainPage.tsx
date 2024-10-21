@@ -291,57 +291,56 @@ const MainPage: React.FC = () => {
           We recommend taking The stack for at least, 7 Days to see the same
           results as the participants in the study above...
         </p>
-        <img src="./img/no-image" alt="whatsApp img" />
-        <p>
-          Although the products in this pack get to work right away to stimulate
-          healthy testosterone production and improve male vitality, the results
-          keep getting better and better with consistent use.
-        </p>
+        <div className="first-row">
+          <img src={image4} alt="whatsApp img" className="whatsApp" />
+          <p className="text">
+            Although the products in this pack get to work right away to
+            stimulate healthy testosterone production and improve male vitality,
+            the results keep getting better and better with consistent use.
+          </p>
+        </div>
+      </div>
+      <div className="coffee-div">
         <h2>HERE IS WHY THIS COFFEE IS THE BEST SOLUTION...</h2>
-        <img
-          src={coffee}
-          alt="Coffe cup"
-          style={{ alignItems: "center", textAlign: "center" }}
-        />
-        <div id="four-column-stars">
-          <div className="column">
-            <img src={star} alt="star" />
-            <h3>Made From Natural Ingredients</h3>
-            <p>
-              Unlike other similar product that are made with harmful chemicals,
-              this product is made from some rare Asian herbs (lotus leaf
-              extract, guarana extract, senna leaf extract etc) which makes it
-              the safest product out there without any side effects.
-            </p>
-          </div>
-          <div className="column">
-            <img src={star} alt="star" />
-            <h3>Long-Lasting Result</h3>
-            <p>
-              This product offers permanent solution and not temporary. Other
-              similar products will continue to drain your money every month,
-              but when you buy this product, it solves all the brouhaha once and
-              for all: even the enlargement is permanent...
-            </p>
-          </div>
-          <div className="column">
-            <img src={star} alt="star" />
-            <h3>Fast Results Within 7 Days</h3>
-            <p>
-              You will not have to wait for 30days to see result. You will start
-              seeing result as fast as the same day of using Man Power Herbal
-              Tea
-            </p>
-          </div>
-          <div className="column">
-            <img src={star} alt="star" />
-            <h3>Works for All Conditions Dysfunction Wahala</h3>
-            <p>
-              This Herbal Cure revives the sleeping little man under no matter
-              how long it has been sleeping, puts you in the mood everytime and
-              boost energy.{" "}
-            </p>
-          </div>
+        <img src={coffee} alt="Coffe cup" className="coffee-cup" />
+      </div>
+      <div id="four-column-stars">
+        <div className="column">
+          <img src={star} alt="star" />
+          <h3>Made From Natural Ingredients</h3>
+          <p>
+            Unlike other similar product that are made with harmful chemicals,
+            this product is made from some rare Asian herbs (lotus leaf extract,
+            guarana extract, senna leaf extract etc) which makes it the safest
+            product out there without any side effects.
+          </p>
+        </div>
+        <div className="column">
+          <img src={star} alt="star" />
+          <h3>Long-Lasting Result</h3>
+          <p>
+            This product offers permanent solution and not temporary. Other
+            similar products will continue to drain your money every month, but
+            when you buy this product, it solves all the brouhaha once and for
+            all: even the enlargement is permanent...
+          </p>
+        </div>
+        <div className="column">
+          <img src={star} alt="star" />
+          <h3>Fast Results Within 7 Days</h3>
+          <p>
+            You will not have to wait for 30days to see result. You will start
+            seeing result as fast as the same day of using Man Power Herbal Tea
+          </p>
+        </div>
+        <div className="column">
+          <img src={star} alt="star" />
+          <h3>Works for All Conditions Dysfunction Wahala</h3>
+          <p>
+            This Herbal Cure revives the sleeping little man under no matter how
+            long it has been sleeping, puts you in the mood everytime and boost
+            energy.{" "}
+          </p>
         </div>
       </div>
 
