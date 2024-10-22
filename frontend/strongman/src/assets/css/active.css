@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding-bottom: 100px;
-  overflow: auto;
+  overflow-x: hidden;
   font-family: "Roboto", sans-serif; 
   line-height: 1.6;
 }
@@ -25,6 +25,10 @@ p {
 #fourth-div {
   padding: 10px 40px;
   margin-bottom: 40px;
+}
+
+#fourth-div {
+  text-align: center;
 }
 
 #ninth-div,
@@ -237,13 +241,10 @@ button {
 }
 
 #fourth-div .left {
-  float: left;
   margin-left: 70px;
   max-width: 50vh;
 }
-#fourth-div .right {
-  float: right;
-}
+
 #fourth-div::after {
   content: "";
   clear: both;
@@ -461,36 +462,6 @@ button {
   color: #ccc;
 }
 
-@media (max-width: 768px) {
-  #four-column-stars {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  #four-column-stars .column {
-    margin-bottom: 20px;
-    max-width: 90%;
-  }
-
-  #fifth-div {
-    padding: 10px 30px;
-  }
-
-  #fifth-div .fifth-columns{
-    display: flex;
-    flex-direction: column;
-  }
-
-  #seventh-div {
-    display: flex;
-    flex-direction: column;
-    padding: 0px 10px;
-  }
-
-  #eighth-div{
-    padding: 0px 10px;
-  }
-}
 
 #eleventh-div {
   text-align: center;
@@ -548,18 +519,6 @@ button {
 
 .package-btn:hover {
   background-color: #1e4526;
-}
-
-@media (max-width: 768px) {
-  #package-columns {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .package {
-    margin-bottom: 20px;
-    max-width: 90%;
-  }
 }
 
 #twelveth-div {
@@ -676,7 +635,67 @@ button {
 }
 
 /* Media query for screens with a max width of 768px (tablets and smaller devices) */
+
+
+
 @media (max-width: 768px) {
+  #fourth-div, #fifth-div, #seventh-div, #eighth-div, #ninth-div, #tenth-div, .coffee-div, #four-column-stars, #eleventh-div, #faq-questions, #third-last-div, #second-last-div, #last-div {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  #fourth-div .left {
+    float: left;
+    margin-left: 0;
+    max-width: 350px;
+    padding-left: 2px;
+  }
+
+  #tenth-div .first-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  #four-column-stars {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #four-column-stars .column {
+    margin-bottom: 20px;
+    max-width: 90%;
+  }
+
+  #fifth-div {
+    padding: 10px 30px;
+  }
+
+  #fifth-div .fifth-columns{
+    display: flex;
+    flex-direction: column;
+  }
+
+  #seventh-div {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 10px;
+  }
+
+  #eighth-div{
+    padding: 0px 10px;
+  }
+  
+  #package-columns {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .package {
+    margin-bottom: 20px;
+    max-width: 90%;
+  }
   /* Adjustments for the four-column stars section */
   #four-column-stars {
     flex-direction: column;
