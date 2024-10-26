@@ -13,7 +13,7 @@ import boosted from "../assets/images/boosted.png";
 import blood from "../assets/images/blood.png";
 import deeper from "../assets/images/deeper.png";
 import coffee from "../assets/images/coffee.png";
-import guarantee from "../assets/images/guarantee.png";
+// import guarantee from "../assets/images/guarantee.png";
 import star from "../assets/images/star.png";
 import packaging from "../assets/images/packaging.png";
 import { Card } from "react-bootstrap";
@@ -436,7 +436,7 @@ const MainPage: React.FC = () => {
         <p>Purchases</p>
       </div>
 
-      <div id="guarantee-div">
+      {/* <div id="guarantee-div">
         <img src={guarantee} alt="Guarantee Image" />
         <header>Here's Our 'Unconditional' 30-Days Guarantee!</header>
         <p>
@@ -456,7 +456,7 @@ const MainPage: React.FC = () => {
           Test drive this hardening coffee for a full 1 month and if you don't
           get results, we will refund you without terms and conditions.
         </p>
-      </div>
+      </div> */}
     
       <div id="faq-questions">
       <h1>FREQUENTLY ASKED QUESTIONS</h1>
