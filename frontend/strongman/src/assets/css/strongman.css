@@ -1,3 +1,10 @@
+/* Basic reset and styling */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   margin: 0;
   padding-bottom: 100px;
@@ -31,12 +38,6 @@ p {
   text-align: center;
 }
 
-#ninth-div,
-#tenth-div,
-#eleventh-div {
-  padding: 50px 20px;
-}
-
 button {
   margin-top: 15px;
 }
@@ -49,7 +50,7 @@ button {
   text-align: center;
   background-color: #f8f9fa;
   width: 100%;
-  padding: 20px;
+  padding: 10px;
   color: green;
   font-weight: bold;
 }
@@ -72,6 +73,7 @@ button {
   color: white;
   padding: 20px 0;
   width: 100%;
+  height: 120vh;
   text-align: center;
   box-sizing: border-box;
 }
@@ -100,7 +102,7 @@ button {
 }
 
 #slide-image {
-  height: 60vh;
+  height: 90vh;
   width: auto;
 }
 
@@ -147,7 +149,7 @@ button {
 
 #second-div {
   overflow: visible;
-  background-color: #c1ac4c;
+  background-color: #008000;
   margin-bottom: 0;
   padding-top: 20px;
   overflow: auto;
@@ -189,7 +191,7 @@ button {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     padding: 20px; 
     width: calc(50% - 10px); 
-    max-width: 350px; 
+    max-width: 550px; 
     display: flex;
     align-items: center;
 }
@@ -229,13 +231,13 @@ button {
 }
 
 #third-div {
-  background-color: #3d2c07;
+  background-color: #800000;
   color: white;
   text-align: center;
   padding: 20px;
-  margin: 20px;
+  /* margin: 20px; */
   border: none;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   font-family: Arial, sans-serif;
 }
@@ -256,6 +258,7 @@ button {
   flex-direction: column;
   padding: 30px 150px;
   margin-bottom: 0;
+  background-color: #EFEFEF;
 }
 
 #fifth-div .fifth-columns {
@@ -280,24 +283,31 @@ button {
   align-items: center;
   justify-content: center;
   height: 100%;
+  background-color: #F8F6C5;
 }
 
 #sixth-div img {
-  width: 500px;
+  width: 90vw;
   height: auto;
 }
 
 #seventh-div {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: left;
   padding: 0px 150px;
+  background-color: black;
 }
 
 #seventh-div img {
   width: 400px; /* Adjust size as needed */
   height: auto;
   margin-right: 40px;
+}
+
+.content{
+  text-align: left;
+  color: white;
 }
 
 #seventh-div .content {
@@ -314,13 +324,16 @@ button {
 }
 
 #eighth-div {
-  text-align: center;
-  padding: 0px 150px;
+  text-align: left;
+  padding: 30px 150px;
+  background-color: #800000;
+  color: white;
 }
 
 #ninth-div {
-  margin: 20px;
+  /* margin: 20px; */
   padding: 10px 150px;
+  background-color: #EFEFEF;
 }
 
 .ninth-content {
@@ -369,7 +382,7 @@ button {
 }
 
 #tenth-div .first-row .text{
-  padding: 70px 100px;
+  /* padding: 70px 100px; */
   width: 50vh;
 }
 
@@ -465,7 +478,9 @@ button {
 
 #eleventh-div {
   text-align: center;
+  background-color: #000000;
   padding: 20px 150px;
+  color: white;
 
 }
 
@@ -494,6 +509,7 @@ button {
 .package p {
   font-size: 16px;
   margin-bottom: 10px;
+  color: #000;
 }
 
 .package img {
@@ -539,12 +555,12 @@ button {
 
 #guarantee-div {
   text-align: center;
-  background-color: #f7f7f7;
+  background-color: #000000;
   padding: 30px;
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin: 20px auto;
-  max-width: 800px;
+  width: 100%;
 }
 
 #guarantee-div img {
@@ -556,7 +572,7 @@ button {
 #guarantee-div header {
   font-size: 28px;
   font-weight: bold;
-  color: #2e7d32;
+  color: white;
   margin-bottom: 20px;
   text-transform: uppercase;
 }
@@ -564,7 +580,7 @@ button {
 #guarantee-div p {
   font-size: 18px;
   line-height: 1.6;
-  color: #333;
+  color: #ffffff;
   margin: 15px 0;
 }
 
@@ -574,11 +590,15 @@ button {
 }
 
 #faq-questions {
-  padding: 10px 150px;
+  padding: 10px 55px;
+  font-weight: bold;
 }
 
 #faq-questions .faq-ans {
-  display: none;
+  font-weight: lighter;
+  margin-top: 10px;
+  margin-left: 50px;
+  margin-bottom: 20px;
 }
 .faq-question {
   cursor: pointer;
@@ -636,7 +656,9 @@ button {
 
 /* Media query for screens with a max width of 768px (tablets and smaller devices) */
 
-
+.spacer {
+  padding: 10px;
+}
 
 @media (max-width: 768px) {
   #fourth-div, #fifth-div, #seventh-div, #eighth-div, #ninth-div, #tenth-div, .coffee-div, #four-column-stars, #eleventh-div, #faq-questions, #third-last-div, #second-last-div, #last-div {
@@ -724,7 +746,7 @@ button {
   }
 
   #slide-image {
-    height: 40vh;
+    height: 70vh;
   }
 
   .testimony {
