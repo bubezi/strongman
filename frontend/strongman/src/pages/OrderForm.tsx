@@ -1,6 +1,9 @@
 import "../assets/css/order.css";
 
 const OrderForm = () => {
+
+  // const packageArg = new URLSearchParams(location.search).get("package");
+
   return (
     <div className="order-page">
       <div className="elementor-section-wrap">

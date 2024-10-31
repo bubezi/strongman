@@ -386,11 +386,9 @@ const MainPage: React.FC = () => {
             <Card.Title><h2>Basic Package</h2></Card.Title>
             </Card.Header>
             <Card.Body>
-
-            <p>(20 Tea Bags Included)</p>
             <p>1 Pack of the STRONGMAN Tea Bag</p>
             <img src={bag1} alt="Basic Package" />
-            <p className="price">3500 KES ONLY</p>
+            <p className="price">2999 KES ONLY</p>
             <button className="package-btn" onClick={() => handlePackage(1) }>👍 CLICK TO ORDER</button>
             </Card.Body>
           </Card>
@@ -399,10 +397,9 @@ const MainPage: React.FC = () => {
             <Card.Title><h2>Premium Package</h2></Card.Title>
             </Card.Header>
             <Card.Body>
-            <p>(40 Tea Bags Altogether)</p>
             <p>2 Packs of the STRONGMAN Tea Bags</p>
             <img src={bag2} alt="Premium Package" />
-            <p className="price">6000 KES ONLY</p>
+            <p className="price">5499 KES ONLY</p>
             <button className="package-btn" onClick={() => handlePackage(2) }>👍 CLICK TO ORDER</button>
            </Card.Body>
           </Card>
@@ -411,11 +408,10 @@ const MainPage: React.FC = () => {
             <Card.Title><h2>Advanced Package</h2></Card.Title>
             </Card.Header>
             <Card.Body>
-            <p>(60 Tea Bags Cumulatively)</p>
             <p>3 Packs of the STRONGMAN Tea Bags</p>
             {/* <img src={bag3} alt="Advanced Package" /> */}
             <Card.Img src={bag3} alt="Advanced Package" />
-            <p className="price">8000 KES ONLY</p>
+            <p className="price">7499 KES ONLY</p>
             <button className="package-btn" onClick={() => handlePackage(3) }>👍 CLICK TO ORDER</button>
             </Card.Body>
           </Card>
