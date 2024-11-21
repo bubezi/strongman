@@ -386,7 +386,7 @@ const MainPage: React.FC = () => {
             <Card.Title><h2>Basic Package</h2></Card.Title>
             </Card.Header>
             <Card.Body>
-            <p>1 Pack of the STRONGMAN Tea Bag</p>
+            <p>1 Pack of the STRONGMAN Tea</p>
             <img src={bag1} alt="Basic Package" />
             <p className="price">2999 KES ONLY</p>
             <button className="package-btn" onClick={() => handlePackage(1) }>👍 CLICK TO ORDER</button>
@@ -397,7 +397,7 @@ const MainPage: React.FC = () => {
             <Card.Title><h2>Premium Package</h2></Card.Title>
             </Card.Header>
             <Card.Body>
-            <p>2 Packs of the STRONGMAN Tea Bags</p>
+            <p>2 Packs of the STRONGMAN Tea</p>
             <img src={bag2} alt="Premium Package" />
             <p className="price">5499 KES ONLY</p>
             <button className="package-btn" onClick={() => handlePackage(2) }>👍 CLICK TO ORDER</button>
@@ -408,7 +408,7 @@ const MainPage: React.FC = () => {
             <Card.Title><h2>Advanced Package</h2></Card.Title>
             </Card.Header>
             <Card.Body>
-            <p>3 Packs of the STRONGMAN Tea Bags</p>
+            <p>3 Packs of the STRONGMAN Tea</p>
             {/* <img src={bag3} alt="Advanced Package" /> */}
             <Card.Img src={bag3} alt="Advanced Package" />
             <p className="price">7499 KES ONLY</p>
