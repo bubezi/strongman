@@ -428,7 +428,7 @@ const MainPage: React.FC = () => {
       </div>
 
       <div id="twelveth-div">
-        <h2>1455</h2>
+        <h2>5000</h2>
         <p>Purchases</p>
       </div>
 

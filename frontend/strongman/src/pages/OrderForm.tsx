@@ -255,13 +255,13 @@ import { useSearchParams } from "react-router-dom";
                                     required
                                   >
                                     <option value={1}>
-                                      BUY ONE: 3500 KES
+                                      BUY ONE: 2999 KES
                                     </option>
                                     <option value={2}>
-                                      BUY TWO: 6000 KES
+                                      BUY TWO: 5499 KES
                                     </option>
                                     <option value={3}>
-                                      BUY THREE: 8000 KES
+                                      BUY THREE: 7499 KES
                                     </option>
                                   </select>
                                 </div>
