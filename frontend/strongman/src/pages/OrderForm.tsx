@@ -1,8 +1,46 @@
+import axios from "axios";
+import { useState } from "react";
 import "../assets/css/order.css";
+import { API_URL } from "../constants";
 
 const OrderForm = () => {
 
   // const packageArg = new URLSearchParams(location.search).get("package");
+  const [formData, setFormData] = useState({
+    name: "",
+    phoneNumber: "",
+    altPhoneNumber: "",
+    address: "",
+    quantity: "",
+  });
+
+  const handleChange = (e: { target: { name: any; value: any; }; }) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+  
+    try {
+      const response = await axios.post(API_URL+ "strongman-data/", formData, {
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+  
+      if (response.status === 200) {
+        alert("Form submitted successfully!");
+        console.log(response.data);
+      } else {
+        console.error("Failed to submit form");
+      }
+    } catch (error) {
+      console.error("Error:", error);
+    }
+  };
+  
 
   return (
     <div className="order-page">
@@ -68,11 +106,7 @@ const OrderForm = () => {
                           <form
                             id="wpforms-form-2524"
                             className="wpforms-validate wpforms-form"
-                            data-formid="2524"
-                            method="post"
-                            encType="multipart/form-data"
-                            action="/active4m/"
-                            noValidate
+                            onSubmit={handleSubmit}
                           >
                             <div className="wpforms-field-container">
                               <div
@@ -93,8 +127,10 @@ const OrderForm = () => {
                                   type="text"
                                   id="wpforms-2524-field_1"
                                   className="wpforms-field-medium wpforms-field-required"
-                                  name="wpforms[fields][1]"
+                                  name="name"
                                   required
+                                  value={formData.name}
+                                  onChange={handleChange}
                                 />
                               </div>
 
@@ -116,7 +152,9 @@ const OrderForm = () => {
                                   type="text"
                                   id="wpforms-2524-field_2"
                                   className="wpforms-field-medium wpforms-field-required"
-                                  name="wpforms[fields][2]"
+                                  name="phoneNumber"
+                                  value={formData.phoneNumber}
+                                  onChange={handleChange}
                                   required
                                 />
                               </div>
@@ -139,7 +177,9 @@ const OrderForm = () => {
                                   type="text"
                                   id="wpforms-2524-field_5"
                                   className="wpforms-field-medium wpforms-field-required"
-                                  name="wpforms[fields][5]"
+                                  name="altPhoneNumber"
+                                  value={formData.altPhoneNumber}
+                                  onChange={handleChange}
                                   required
                                 />
                               </div>
@@ -162,7 +202,9 @@ const OrderForm = () => {
                                   type="text"
                                   id="wpforms-2524-field_3"
                                   className="wpforms-field-medium wpforms-field-required"
-                                  name="wpforms[fields][3]"
+                                  name="address"
+                                  value={formData.address}
+                                  onChange={handleChange}
                                   required
                                 />
                               </div>
@@ -184,7 +226,9 @@ const OrderForm = () => {
                                 <select
                                   id="wpforms-2524-field_4"
                                   className="wpforms-field-medium wpforms-field-required"
-                                  name="wpforms[fields][4]"
+                                  name="quantity"
+                                  value={formData.quantity}
+                                  onChange={handleChange}
                                   required
                                 >
                                   <option value="BUY ONE: 3500 KES">
