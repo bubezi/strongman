@@ -13,17 +13,17 @@ import { useSearchParams } from "react-router-dom";
       if (packageType === "1") {
         setFormData((prevState) => ({
           ...prevState,
-          quantity: "BUY ONE: 3500 KES",
+          quantity: "1",
         }));
       } else if (packageType === "2") {
         setFormData((prevState) => ({
           ...prevState,
-          quantity: "BUY TWO: 6000 KES",
+          quantity: "2",
         }));
       } else if (packageType === "3") {
         setFormData((prevState) => ({
           ...prevState,
-          quantity: "BUY THREE: 8000 KES",
+          quantity: "3",
         }));
       }
     }, [searchParams]);
@@ -254,13 +254,13 @@ import { useSearchParams } from "react-router-dom";
                                     onChange={handleChange}
                                     required
                                   >
-                                    <option value="BUY ONE: 3500 KES">
+                                    <option value="1">
                                       BUY ONE: 3500 KES
                                     </option>
-                                    <option value="BUY TWO: 6000 KES">
+                                    <option value="2">
                                       BUY TWO: 6000 KES
                                     </option>
-                                    <option value="BUY THREE: 8000 KES">
+                                    <option value="3">
                                       BUY THREE: 8000 KES
                                     </option>
                                   </select>
