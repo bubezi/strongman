@@ -13,17 +13,17 @@ import { useSearchParams } from "react-router-dom";
       if (packageType === "1") {
         setFormData((prevState) => ({
           ...prevState,
-          quantity: "1",
+          quantity: 1,
         }));
       } else if (packageType === "2") {
         setFormData((prevState) => ({
           ...prevState,
-          quantity: "2",
+          quantity: 2,
         }));
       } else if (packageType === "3") {
         setFormData((prevState) => ({
           ...prevState,
-          quantity: "3",
+          quantity: 3,
         }));
       }
     }, [searchParams]);
@@ -34,7 +34,7 @@ import { useSearchParams } from "react-router-dom";
       phoneNumber: "",
       altPhoneNumber: "",
       address: "",
-      quantity: "",
+      quantity: 1,
     });
 
     const handleChange = (e: { target: { name: any; value: any; }; }) => {
@@ -54,7 +54,7 @@ import { useSearchParams } from "react-router-dom";
         });
     
         if (response.status === 200) {
-          alert("Form submitted successfully!");
+          alert("Order submitted successfully!");
           console.log(response.data);
         } else {
           console.error("Failed to submit form");
@@ -254,13 +254,13 @@ import { useSearchParams } from "react-router-dom";
                                     onChange={handleChange}
                                     required
                                   >
-                                    <option value="1">
+                                    <option value={1}>
                                       BUY ONE: 3500 KES
                                     </option>
-                                    <option value="2">
+                                    <option value={2}>
                                       BUY TWO: 6000 KES
                                     </option>
-                                    <option value="3">
+                                    <option value={3}>
                                       BUY THREE: 8000 KES
                                     </option>
                                   </select>
