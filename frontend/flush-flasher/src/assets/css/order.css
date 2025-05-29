@@ -1,0 +1,124 @@
+/* Container for form section */
+.order-page .elementor-section-wrap {
+  width: 100%;
+  background-color: #ffffff;
+  /* border-radius: 8px; */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* margin: 2rem 0; */
+}
+
+.order-page .elementor-section {
+  padding: 2rem;
+}
+
+/* Header styling */
+.order-page h2.elementor-heading-title {
+  font-size: 1.5rem;
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+  /* text-align: center;    */
+  width: 100%;
+}
+
+/* Header styling */
+.order-page h2.elementor-form-title {
+  font-size: 1rem;
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+  /* text-align: center;    */
+  width: 100%;
+}
+
+.order-page .elementor-top-section {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  width: 100%;
+  background-color: green;
+}
+
+.order-page .elementor-form-section {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  text-align: left;
+  width: 100%;
+  background-color: white;
+  padding: 10px 140px;
+}
+
+.order-page .top-section-heading {
+  font-size: 1.5rem;
+  color: white;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+/* Form input fields styling */
+.order-page input[type="text"],
+.order-page input[type="email"],
+.order-page textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.order-page input[type="text"]:focus,
+.order-page input[type="email"]:focus,
+.order-page textarea:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.3);
+}
+
+/* Button styling */
+.order-page button {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1.1rem;
+  color: #fff;
+  background-color: #3498db;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.order-page button:hover {
+  background-color: #2980b9;
+}
+
+.order-page .elementor-bottom-section {
+    width: 100%;
+    background-color: #800000;
+}
+
+#field_4_container {
+    padding-bottom: 30px;
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 600px) {
+  .order-page .elementor-section-wrap {
+    padding: 1rem;
+  }
+  
+  .order-page .elementor-section {
+    padding: 1rem;
+  }
+
+  .order-page h2.elementor-heading-title {
+    font-size: 1.25rem;
+  }
+
+  .order-page button {
+    font-size: 1rem;
+  }
+
+  .order-page .elementor-form-section {
+    padding: 10px 0px;
+  }
+}
