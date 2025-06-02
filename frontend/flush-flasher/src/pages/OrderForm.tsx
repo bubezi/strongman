@@ -53,9 +53,9 @@ import { useSearchParams } from "react-router-dom";
           },
         });
     
-        if (response.status === 200) {
+        if (response.status === 201) {
           alert("Order submitted successfully!");
-          console.log(response.data);
+          // console.log(response.data);
         } else {
           console.error("Failed to submit form");
         }

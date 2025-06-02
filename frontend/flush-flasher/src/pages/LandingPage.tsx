@@ -42,7 +42,7 @@ const LandingPage: React.FC = () => {
       </div>
       <footer className="footer">
         <button className="cta-button" onClick={handleAccessClick}>
-          Click Here to Gain Access
+          Learn More
         </button>
       </footer>
     </>
