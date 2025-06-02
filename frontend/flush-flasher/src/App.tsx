@@ -15,7 +15,7 @@ function App() {
       <Route path="/" element={<LandingPage />} />
       <Route path="/active" element={<MainPage />} />
       <Route path="/iwant" element={<OrderForm />} />
-      <Route path="/thank-you" element={<ThankYouPage />} />
+      <Route path="/thankyou" element={<ThankYouPage />} />
     </Routes>
     </BrowserRouter>
     </>

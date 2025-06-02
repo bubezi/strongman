@@ -59,7 +59,7 @@ const OrderForm = () => {
 
       if (response.status === 201) {
         alert("Order submitted successfully!");
-        navigate("/thank-you");
+        navigate("/thankyou");
         // console.log(response.data);
       } else {
         console.error("Failed to submit form");
