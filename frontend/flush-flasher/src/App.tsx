@@ -4,7 +4,7 @@ import './App.css';
 import MainPage from "./pages/MainPage";
 import OrderForm from "./pages/OrderForm";
 import "bootstrap/dist/css/bootstrap.min.css";
-import ThankYouPage from "./pages/ThankyouPage";
+import ThankYouPage from "./pages/ThankYouPage";
 
 function App() {
 
