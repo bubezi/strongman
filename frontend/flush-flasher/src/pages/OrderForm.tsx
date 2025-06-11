@@ -63,95 +63,118 @@ const OrderForm = () => {
   };
 
   return (
-    <div className="order-page">
-      <div className="order-card">
-        <h2>Place Your Order</h2>
-        <form id="order-form" onSubmit={handleSubmit}>
-          <div className="field-grid">
-            <div className="wpforms-field wpforms-field-text">
-              <label htmlFor="name">Name <span>*</span></label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                required
-                value={formData.name}
-                onChange={handleChange}
-              />
+    <>
+      {/* HEADER */}
+      <header className="order-header">
+        <h1>Fill in your details below to place an order</h1>
+      </header>
+
+      {/* FORM CARD */}
+      <div className="order-page">
+        <div className="order-card">
+          <h2>Place Your Order</h2>
+          <form id="order-form" onSubmit={handleSubmit}>
+            <div className="field-grid">
+              <div className="wpforms-field wpforms-field-text">
+                <label htmlFor="name">
+                  Name <span>*</span>
+                </label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                  value={formData.name}
+                  onChange={handleChange}
+                />
+              </div>
+
+              <div className="wpforms-field wpforms-field-text">
+                <label htmlFor="phoneNumber">
+                  Phone <span>*</span>
+                </label>
+                <input
+                  type="tel"
+                  id="phoneNumber"
+                  name="phoneNumber"
+                  required
+                  value={formData.phoneNumber}
+                  onChange={handleChange}
+                />
+              </div>
+
+              <div className="wpforms-field wpforms-field-text">
+                <label htmlFor="altPhoneNumber">
+                  Alt. Phone <span>*</span>
+                </label>
+                <input
+                  type="tel"
+                  id="altPhoneNumber"
+                  name="altPhoneNumber"
+                  required
+                  value={formData.altPhoneNumber}
+                  onChange={handleChange}
+                />
+              </div>
+
+              <div className="wpforms-field wpforms-field-text">
+                <label htmlFor="address">
+                  Address <span>*</span>
+                </label>
+                <input
+                  type="text"
+                  id="address"
+                  name="address"
+                  required
+                  value={formData.address}
+                  onChange={handleChange}
+                />
+              </div>
+
+              <div className="wpforms-field wpforms-field-select">
+                <label htmlFor="quantity">
+                  Quantity <span>*</span>
+                </label>
+                <select
+                  id="quantity"
+                  name="quantity"
+                  required
+                  value={formData.quantity}
+                  onChange={handleChange}
+                >
+                  <option value={1}>Buy One – 2999 KES</option>
+                  <option value={2}>Buy Two – 5499 KES</option>
+                  <option value={3}>Buy Three – 7499 KES</option>
+                </select>
+              </div>
             </div>
 
-            <div className="wpforms-field wpforms-field-text">
-              <label htmlFor="phoneNumber">Phone <span>*</span></label>
-              <input
-                type="tel"
-                id="phoneNumber"
-                name="phoneNumber"
-                required
-                value={formData.phoneNumber}
-                onChange={handleChange}
-              />
+            {/* honeypot */}
+            <div className="hp">
+              <label htmlFor="hp">Email</label>
+              <input type="text" name="wpforms[hp]" id="hp" />
             </div>
 
-            <div className="wpforms-field wpforms-field-text">
-              <label htmlFor="altPhoneNumber">Alt. Phone <span>*</span></label>
-              <input
-                type="tel"
-                id="altPhoneNumber"
-                name="altPhoneNumber"
-                required
-                value={formData.altPhoneNumber}
-                onChange={handleChange}
-              />
-            </div>
-
-            <div className="wpforms-field wpforms-field-text">
-              <label htmlFor="address">Address <span>*</span></label>
-              <input
-                type="text"
-                id="address"
-                name="address"
-                required
-                value={formData.address}
-                onChange={handleChange}
-              />
-            </div>
-
-            <div className="wpforms-field wpforms-field-select">
-              <label htmlFor="quantity">Quantity <span>*</span></label>
-              <select
-                id="quantity"
-                name="quantity"
-                required
-                value={formData.quantity}
-                onChange={handleChange}
+            <div className="wpforms-submit-container">
+              <button
+                type="submit"
+                className="wpforms-submit"
+                disabled={isSubmitting}
+                data-alt-text="Sending…"
+                data-submit-text="Submit"
               >
-                <option value={1}>Buy One – 2999 KES</option>
-                <option value={2}>Buy Two – 5499 KES</option>
-                <option value={3}>Buy Three – 7499 KES</option>
-              </select>
+                {isSubmitting ? "Sending…" : "Submit"}
+              </button>
             </div>
-          </div>
-
-          {/* honeypot */}
-          <div className="hp">
-            <label htmlFor="hp">Email</label>
-            <input type="text" name="wpforms[hp]" id="hp" />
-          </div>
-
-          <div className="wpforms-submit-container">
-            <button
-              type="submit"
-              className="wpforms-submit"
-              disabled={isSubmitting}
-              data-alt-text="Sending…"
-              data-submit-text="Submit"
-            >
-              {isSubmitting ? "Sending…" : "Submit"}
-            </button>
-          </div>
-        </form>
+          </form>
+        </div>
       </div>
-    </div>
+
+      {/* FOOTER */}
+      <footer className="order-footer">
+        <p>Thanks for your patronage; we expect your feedback shortly!!!</p>
+      </footer>
+    </>
   );
 };
 
