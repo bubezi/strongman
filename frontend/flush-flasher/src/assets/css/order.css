@@ -184,7 +184,7 @@
 .wpforms-field-text input:focus,
 .wpforms-field-select select:focus {
   outline: none;
-  border-color: #007bff;
+  border-color: green;
 }
 
 /* honeypot (hidden) */
@@ -205,7 +205,7 @@
   font-size: 1rem;
   font-weight: 600;
   color: #fff;
-  background-color: #007bff;
+  background-color: green;
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -226,7 +226,7 @@
 .order-footer {
   text-align: center;
   padding: 1rem;
-  background-color: #007bff;
+  background-color: green;
   color: #fff;
 }
 
