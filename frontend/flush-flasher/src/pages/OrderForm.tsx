@@ -15,7 +15,6 @@ const OrderForm = () => {
     address: "",
     quantity: 1,
   });
-
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   // Pre-fill quantity if ?package=1|2|3
@@ -39,8 +38,8 @@ const OrderForm = () => {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (isSubmitting) return;
-
     setIsSubmitting(true);
+
     try {
       const response = await axios.post(
         `${API_URL}flush-flasher-data/`,
@@ -65,147 +64,92 @@ const OrderForm = () => {
 
   return (
     <div className="order-page">
-      <div className="elementor-section-wrap">
-        {/* Top Instruction Section */}
-        <section
-          className="elementor-section elementor-top-section"
-          data-element_type="section"
-        >
-          <div className="elementor-container">
-            <h2 className="top-section-heading">
-              Fill in your correct details so we can send your order to you…
-              Please, do not fill this form if you are not ready to buy.
-            </h2>
-          </div>
-        </section>
+      <div className="order-card">
+        <h2>Place Your Order</h2>
+        <form id="order-form" onSubmit={handleSubmit}>
+          <div className="field-grid">
+            <div className="wpforms-field wpforms-field-text">
+              <label htmlFor="name">Name <span>*</span></label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                value={formData.name}
+                onChange={handleChange}
+              />
+            </div>
 
-        {/* Form Section */}
-        <section
-          className="elementor-section elementor-form-section"
-          data-element_type="section"
-        >
-          <div className="elementor-container">
-            <div className="elementor-widget-wrap">
-              <h2 className="elementor-form-title">Place Your Order</h2>
+            <div className="wpforms-field wpforms-field-text">
+              <label htmlFor="phoneNumber">Phone <span>*</span></label>
+              <input
+                type="tel"
+                id="phoneNumber"
+                name="phoneNumber"
+                required
+                value={formData.phoneNumber}
+                onChange={handleChange}
+              />
+            </div>
 
-              <form
-                id="order-form"
-                className="wpforms-form"
-                onSubmit={handleSubmit}
+            <div className="wpforms-field wpforms-field-text">
+              <label htmlFor="altPhoneNumber">Alt. Phone <span>*</span></label>
+              <input
+                type="tel"
+                id="altPhoneNumber"
+                name="altPhoneNumber"
+                required
+                value={formData.altPhoneNumber}
+                onChange={handleChange}
+              />
+            </div>
+
+            <div className="wpforms-field wpforms-field-text">
+              <label htmlFor="address">Address <span>*</span></label>
+              <input
+                type="text"
+                id="address"
+                name="address"
+                required
+                value={formData.address}
+                onChange={handleChange}
+              />
+            </div>
+
+            <div className="wpforms-field wpforms-field-select">
+              <label htmlFor="quantity">Quantity <span>*</span></label>
+              <select
+                id="quantity"
+                name="quantity"
+                required
+                value={formData.quantity}
+                onChange={handleChange}
               >
-                <div className="wpforms-field-container">
-                  <div className="wpforms-field wpforms-field-text">
-                    <label htmlFor="name">
-                      NAME <span>*</span>
-                    </label>
-                    <input
-                      type="text"
-                      id="name"
-                      name="name"
-                      required
-                      value={formData.name}
-                      onChange={handleChange}
-                    />
-                  </div>
-
-                  <div className="wpforms-field wpforms-field-text">
-                    <label htmlFor="phoneNumber">
-                      Phone Number <span>*</span>
-                    </label>
-                    <input
-                      type="tel"
-                      id="phoneNumber"
-                      name="phoneNumber"
-                      required
-                      value={formData.phoneNumber}
-                      onChange={handleChange}
-                    />
-                  </div>
-
-                  <div className="wpforms-field wpforms-field-text">
-                    <label htmlFor="altPhoneNumber">
-                      Alternative Phone Number <span>*</span>
-                    </label>
-                    <input
-                      type="tel"
-                      id="altPhoneNumber"
-                      name="altPhoneNumber"
-                      required
-                      value={formData.altPhoneNumber}
-                      onChange={handleChange}
-                    />
-                  </div>
-
-                  <div className="wpforms-field wpforms-field-text">
-                    <label htmlFor="address">
-                      Address <span>*</span>
-                    </label>
-                    <input
-                      type="text"
-                      id="address"
-                      name="address"
-                      required
-                      value={formData.address}
-                      onChange={handleChange}
-                    />
-                  </div>
-
-                  <div className="wpforms-field wpforms-field-select">
-                    <label htmlFor="quantity">
-                      Quantities <span>*</span>
-                    </label>
-                    <select
-                      id="quantity"
-                      name="quantity"
-                      required
-                      value={formData.quantity}
-                      onChange={handleChange}
-                    >
-                      <option value={1}>BUY ONE: 2999 KES</option>
-                      <option value={2}>BUY TWO: 5499 KES</option>
-                      <option value={3}>BUY THREE: 7499 KES</option>
-                    </select>
-                  </div>
-                </div>
-
-                {/* Honeypot field */}
-                <div className="wpforms-field wpforms-field-hp">
-                  <label htmlFor="hp">Email</label>
-                  <input
-                    type="text"
-                    name="wpforms[hp]"
-                    id="hp"
-                    className="hp"
-                  />
-                </div>
-
-                <div className="wpforms-submit-container">
-                  <button
-                    type="submit"
-                    className="wpforms-submit"
-                    disabled={isSubmitting}
-                    data-alt-text="Sending…"
-                    data-submit-text="Submit"
-                  >
-                    {isSubmitting ? "Sending…" : "Submit"}
-                  </button>
-                </div>
-              </form>
+                <option value={1}>Buy One – 2999 KES</option>
+                <option value={2}>Buy Two – 5499 KES</option>
+                <option value={3}>Buy Three – 7499 KES</option>
+              </select>
             </div>
           </div>
-        </section>
 
-        {/* Bottom Thank-You Section */}
-        <section
-          className="elementor-section elementor-bottom-section"
-          data-element_type="section"
-        >
-          <div className="elementor-container">
-            <h2 className="elementor-heading-title">
-              Thanks for your patronage; we expect your feedback shortly!!!
-            </h2>
+          {/* honeypot */}
+          <div className="hp">
+            <label htmlFor="hp">Email</label>
+            <input type="text" name="wpforms[hp]" id="hp" />
           </div>
-        </section>
+
+          <div className="wpforms-submit-container">
+            <button
+              type="submit"
+              className="wpforms-submit"
+              disabled={isSubmitting}
+              data-alt-text="Sending…"
+              data-submit-text="Submit"
+            >
+              {isSubmitting ? "Sending…" : "Submit"}
+            </button>
+          </div>
+        </form>
       </div>
     </div>
   );
