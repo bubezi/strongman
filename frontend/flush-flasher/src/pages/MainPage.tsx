@@ -399,7 +399,7 @@ const MainPage: React.FC = () => {
             <Card.Body>
               <p>1 Pack of the Flush flasher</p>
               <img src={bag1} alt="Basic Package" />
-              <p className="price">2999 KES ONLY</p>
+              <p className="price">2500 KES ONLY</p>
               <button className="package-btn" onClick={() => handlePackage(1)}>
                 👍 CLICK TO ORDER
               </button>
@@ -414,7 +414,7 @@ const MainPage: React.FC = () => {
             <Card.Body>
               <p>2 Packs of the Flush flasher</p>
               <img src={bag2} alt="Premium Package" />
-              <p className="price">5499 KES ONLY</p>
+              <p className="price">4000 KES ONLY</p>
               <button className="package-btn" onClick={() => handlePackage(2)}>
                 👍 CLICK TO ORDER
               </button>
@@ -430,7 +430,7 @@ const MainPage: React.FC = () => {
               <p>3 Packs of the Flush flasher</p>
               {/* <img src={bag3} alt="Advanced Package" /> */}
               <Card.Img src={bag3} alt="Advanced Package" />
-              <p className="price">7499 KES ONLY</p>
+              <p className="price">5499 KES ONLY</p>
               <button className="package-btn" onClick={() => handlePackage(3)}>
                 👍 CLICK TO ORDER
               </button>
