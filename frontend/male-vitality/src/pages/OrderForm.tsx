@@ -142,9 +142,9 @@ const OrderForm = () => {
                   value={formData.quantity}
                   onChange={handleChange}
                 >
-                  <option value={1}>Buy One – 2500 KES</option>
-                  <option value={2}>Buy Two – 4000 KES</option>
-                  <option value={3}>Buy Three – 5499 KES</option>
+                  <option value={1}>Buy One – 3500 KES</option>
+                  <option value={2}>Buy Two – 6300 KES</option>
+                  <option value={3}>Buy Three – 9000 KES</option>
                 </select>
               </div>
             </div>
