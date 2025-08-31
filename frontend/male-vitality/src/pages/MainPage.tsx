@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "../assets/css/strongman.css";
 import slideImage1 from "../assets/images/first.jpeg";
+import slideImage2 from "../assets/images/first.png";
 import image5 from "../assets/images/seeds.jpg";
 import belt from "../assets/images/belt.jpg";
 import bag1 from "../assets/images/bag01.png";
@@ -216,7 +217,7 @@ const MainPage: React.FC = () => {
       </div>
 
       <div id="seventh-div">
-        <img src={slideImage1} alt="Image7" />
+        <img src={slideImage2} alt="Image7" />
         <div className="content">
           <h3>🌿 Male Vitality Tea is more than just tea—it’s a natural partner for men who want to feel stronger, healthier, and more confident every day.</h3>
         </div>
