@@ -379,7 +379,7 @@ const MainPage: React.FC = () => {
             <Card.Body>
               <p>1 Pack of the Male Vitality Tea</p>
               <img src={bag1} alt="Basic Package" />
-              <p className="price">2500 KES ONLY</p>
+              <p className="price">3500 KES ONLY</p>
               <button className="package-btn" onClick={() => handlePackage(1)}>
                 👍 CLICK TO ORDER
               </button>
