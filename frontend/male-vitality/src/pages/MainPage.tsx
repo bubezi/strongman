@@ -138,17 +138,17 @@ const MainPage: React.FC = () => {
         <div id="nfourth-div">
           <ul>
             <li>
-              🌿 May support natural enhancement of size, strength, and
+              🌿 Supports natural enhancement of size, strength, and
               performance.
             </li>
             <li>
-              🌿 May support natural enhancement of size, strength, and
+              🌿 Supports natural enhancement of size, strength, and
               performance.
             </li>
             <li>🌿 Supports healthy sperm count and fertility.</li>
             <li>🌿 Promotes maximum strength and physical durability.</li>
             <li>🌿 Helps strengthen the immune system naturally.</li>
-            <li>🌿 May support healthy testosterone levels.</li>
+            <li>🌿 Supports healthy testosterone levels.</li>
             <li>
               🌿 Encourages overall male reproductive health and vitality.
             </li>
