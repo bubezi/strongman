@@ -507,11 +507,6 @@ const MainPage: React.FC = () => {
           Arrives At Your Location & You Are Not Available For Pickup. Because
           Such Situations Have Caused Us Great Losses Lately.
         </h5>
-        <p>
-          For more inquiries and questions of any kind, feel free to contact us
-          and our customer team will respond within 24hrs. You can reach us on:
-        </p>
-        <h1>+254 768 429340</h1>
       </div>
 
       <div id="last-div">
