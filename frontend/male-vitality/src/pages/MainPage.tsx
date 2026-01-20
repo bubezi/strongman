@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "../assets/css/strongman.css";
-import slideImage1 from "../assets/images/first.jpeg";
+import slideImage1 from "../assets/images/first_one.png";
 import slideImage2 from "../assets/images/first.png";
 import image5 from "../assets/images/seeds.jpg";
 import belt from "../assets/images/belt.jpg";
